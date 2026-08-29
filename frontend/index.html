@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imperium Scan - Quantum Explorer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/quantum.css">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <header class="quantum-header">
+      <div class="logo">
+        <img src="assets/logo.svg" alt="Imperium Scan" />
+        <span>Imperium Scan</span>
+        <span class="badge">Quantum 2030</span>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Cerca per blocco, transazione o indirizzo..." id="searchInput">
+        <button id="searchBtn">🔍</button>
+      </div>
+      <div class="network-info">
+        <span>Chain ID: 9819</span>
+        <span>|</span>
+        <span id="blockHeight">Loading...</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="dashboard">
+        <div class="stats">
+          <div class="stat-card">
+            <h3>Ultimo Blocco</h3>
+            <p id="lastBlock">-</p>
+          </div>
+          <div class="stat-card">
+            <h3>Supply</h3>
+            <p id="supply">-</p>
+          </div>
+          <div class="stat-card">
+            <h3>Validatori</h3>
+            <p id="validators">-</p>
+          </div>
+          <div class="stat-card">
+            <h3>TPS</h3>
+            <p id="tps">-</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="recent">
+        <div class="recent-blocks">
+          <h2>Ultimi Blocchi</h2>
+          <div id="blocksList">Loading...</div>
+        </div>
+        <div class="recent-txs">
+          <h2>Ultime Transazioni</h2>
+          <div id="txsList">Loading...</div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Imperium Chain · Quantum Layer 0 · 2030</p>
+      <p><a href="https://github.com/Dev-Ceo26/imperiumscan">GitHub</a> · <a href="https://discord.gg/J2W8Dk56m">Discord</a></p>
+    </footer>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/quantum.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "chainId": 9819,
+  "rpcUrl": "https://9819.rpc.thirdweb.com",
+  "explorerName": "Imperium Scan",
+  "theme": "quantum",
+  "currencySymbol": "IMP",
+  "blockTime": 12,
+  "validators": [],
+  "explorerUrl": "https://imperiumscan.com",
+  "network": "mainnet"
+}
